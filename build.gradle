@@ -28,7 +28,7 @@ minecraft {
 
 	mappings = mcp_mappings
 
-	replaceIn "infiniocean/InfiniOcean.java"
+	replaceIn "InfiniOcean.java"
 	replace "@VERSION@", mod_version
 }
 
@@ -54,6 +54,13 @@ repositories {
 
 dependencies {
 	deobfCompile group: "net.shadowfacts", name: "ShadowMC", version: mc_version + "-" + shadowmc_version
+}
+
+jar {
+	manifest {
+		attributes	"FMLCorePlugin": "net.shadowfacts.infiniocean.transformer.IOPlugin",
+					"FMLCorePluginContainsFMLMod": "true"
+	}
 }
 
 // curseforge {
