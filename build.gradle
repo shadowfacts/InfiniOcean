@@ -63,16 +63,21 @@ jar {
 	}
 }
 
-// curseforge {
-// 	apiKey = project.hasProperty("curseForgeApiKey") ? project.curseForgeApiKey : ""
+curseforge {
+	apiKey = project.hasProperty("curseForgeApiKey") ? project.curseForgeApiKey : ""
 
-// 	project {
-// 		id = ""
+	project {
+		id = "245592"
 
-// 		addGameVersion "1.9.4"
+		addGameVersion "1.9.4"
+		addGameVersion "Java 8"
 
-// 		mainArtifact(shadowJar) {
-// 			releaseType = "release"
-// 		}
-// 	}
-// }
+		mainArtifact(jar) {
+			releaseType = "beta"
+
+			relations {
+				requiredLibrary "shadowmc"
+			}
+		}
+	}
+}
