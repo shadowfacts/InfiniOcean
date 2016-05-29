@@ -14,7 +14,7 @@ import java.io.*;
 /**
  * @author shadowfacts
  */
-@Mod(modid = InfiniOcean.modId, name = InfiniOcean.name, version = InfiniOcean.version, acceptedMinecraftVersions = "[1.9.4]", dependencies = "required-after:shadowmc@[3.3.4,);")
+@Mod(modid = InfiniOcean.modId, name = InfiniOcean.name, version = InfiniOcean.version, acceptedMinecraftVersions = "[1.9.4]", dependencies = "required-after:shadowmc@[3.3.4,);", guiFactory = "net.shadowfacts.infiniocean.IOGUIFactory")
 public class InfiniOcean {
 
 	public static final String modId = "InfiniOcean";

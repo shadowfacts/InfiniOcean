@@ -1,1 +1,7 @@
 generator.ocean=InfiniOcean
+
+InfiniOcean.config.gui.title=InfiniOcean Configuration
+InfiniOcean.config.gui.category.end=The End
+InfiniOcean.config.gui.category.general=General
+InfiniOcean.config.gui.category.nether=Nether
+InfiniOcean.config.gui.category.overworld=Overworld
